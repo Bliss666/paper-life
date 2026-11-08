@@ -1,0 +1,18 @@
+# 图解风微信图文管线 · 配置
+# 复制这个文件为 config.yml 并填入你的 API key（config.yml 不会被提交）
+
+llm:
+  # 任何 OpenAI 兼容接口都行
+  # DeepSeek: https://api.deepseek.com/v1
+  # Kimi:     https://api.moonshot.cn/v1
+  # 智谱:     https://open.bigmodel.cn/api/paas/v4
+  # 通义:     https://dashscope.aliyuncs.com/compatible-mode/v1
+  base_url: "https://api.deepseek.com/v1"
+  api_key: ""
+  model: "deepseek-chat"
+  timeout: 90
+  temperature: 0.9
+
+site:
+  domain: "thinknote.pro"
+  tagline: "边聊 · 深想 · 即记 · 即享"

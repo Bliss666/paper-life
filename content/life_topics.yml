@@ -1,0 +1,838 @@
+# 《纸上人生》· 选题库
+#
+# 主力赛道：生活技巧（15 篇）
+# 副线赛道：人生道理（5 篇）
+#
+# 页面字段：
+#   top / bottom        字幕（*关键词* 标成朱红）
+#   top_actor / bottom_actor
+#     pose    stand/walk/run/sit/lie/sleep/desk/armsup/headache/wave
+#     mood    neutral/happy/joy/sad/rage/tired/cold/calm/think/smug/cry
+#     hair    short/bun/middle/curly/bald/pony/long
+#     shirt   衣服色 (R,G,B)
+#     prop    phone/book/laptop/clock
+#     bubble  气泡文字
+#     bubble_kind  speech/think/shout/aside
+#     bubble_tail  down/left/right
+#     sfx      拟声词（漫画效果字）
+#   top_scene / bottom_scene
+#
+# 文案铁律（最重要）：
+#   1. 上句和下句之间必须有转折连词："但是 / 可是 / 而 / 其实 / 结果"
+#   2. 一眼能懂，不用术语、不用书面语
+#   3. 上下句字数接近，读起来是一组对比
+#   4. 写具体的动作和数字，不写"高效""优化"这种空话
+#   5. *关键词* 一页只标一个
+#   6. 上句写"错误的做法"，下句写"正确的做法"
+
+# ══════════════════════════════════════════════════════
+#  生活技巧（主力赛道）
+# ══════════════════════════════════════════════════════
+
+- id: tip-001
+  topic: 五个被严重低估的日常小技巧
+  title: 五个被低估的技巧
+  subtitle: 学会了，一天能省下两小时
+  theme: sage
+  pages:
+    - top: 别人*一个一个翻菜单*，翻了十分钟
+      top_backdrop: phone
+      bottom_backdrop: chat
+      bottom: 但是你*直接搜功能名*，三秒就够了
+      top_actor: {pose: think, mood: think, hair: short, shirt: [198, 88, 68], prop: phone, bubble: "这个在哪呢", bubble_kind: think, bubble_tail: right, sfx: "翻…翻…"}
+      bottom_actor: {pose: stand, mood: smug, hair: short, shirt: [96, 142, 82], prop: phone, bubble: "搜一下就出来了", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 截图*只能截一屏*，你截了五张
+      top_backdrop: phone
+      bottom_backdrop: phone
+      bottom: 可是你会*滚动截长图*，一张就够了
+      top_actor: {pose: sit, mood: tired, hair: bun, shirt: [198, 88, 68], bubble: "再截一张…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: happy, hair: bun, shirt: [96, 142, 82], bubble: "一次就能截完整页", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 文件名全是*「新建文档」*，根本找不到
+      top_backdrop: cabinet
+      bottom_backdrop: cabinet
+      bottom: 而你写的是*「1106-周报-v2」*，一眼认得出
+      top_actor: {pose: sit, mood: sad, hair: middle, shirt: [198, 88, 68], prop: laptop, bubble: "又是新建文档", bubble_kind: think, bubble_tail: left}
+      bottom_actor: {pose: stand, mood: neutral, hair: middle, shirt: [96, 142, 82], prop: laptop, bubble: "半年后还能翻出来", bubble_kind: speech, bubble_tail: left}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 电脑一开*先刷手机*，一晃就到中午了
+      top_backdrop: chat
+      bottom_backdrop: desk
+      bottom: 但是电脑一开*先写三行*，今天要干什么
+      top_actor: {pose: sit, mood: cry, hair: pony, shirt: [198, 88, 68], prop: phone, bubble: "再刷五分钟…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: sit, mood: neutral, hair: pony, shirt: [96, 142, 82], prop: laptop, bubble: "先定好今天的三件事", bubble_kind: speech, bubble_tail: left}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 出门前你*翻遍口袋*找钥匙
+      top_backdrop: door
+      bottom_backdrop: door
+      bottom: 可是钥匙*挂在门口*，伸手就拿到
+      top_actor: {pose: headache, mood: rage, hair: curly, shirt: [198, 88, 68], bubble: "钥匙呢？！", bubble_kind: shout, bubble_tail: down, sfx: "翻！翻！"}
+      bottom_actor: {pose: walk, mood: happy, hair: curly, shirt: [96, 142, 82], bubble: "不用找,伸手就有", bubble_kind: speech, bubble_tail: right}
+      top_scene: pink_bad
+      bottom_scene: pink_good
+
+- id: tip-002
+  topic: 三个野方法记住任何东西
+  title: 三个野方法
+  subtitle: 不用背不用抄，写两笔就行
+  theme: dusk
+  pages:
+    - top: 你把书*抄了三遍*，还是不会用
+      top_backdrop: books
+      bottom_backdrop: radio
+      bottom: 但是你把它*讲给外行听*一遍，就真会了
+      top_actor: {pose: sit, mood: tired, hair: short, shirt: [198, 88, 68], prop: book, bubble: "再抄一遍吧…", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: armsup, mood: happy, hair: short, shirt: [96, 142, 82], bubble: "就一句话,它管啥用", bubble_kind: speech, bubble_tail: down}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你划了*满满十条线*，等于一条都没划
+      top_backdrop: books
+      bottom_backdrop: checklist
+      bottom: 而你只留下*最关键的三句*
+      top_actor: {pose: sit, mood: think, hair: bun, shirt: [198, 88, 68], prop: book, bubble: "划满比较安心", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: bun, shirt: [96, 142, 82], prop: book, bubble: "三句就够用了", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你在*看第三遍*，眼睛都花了
+      top_backdrop: books
+      bottom_backdrop: bulb
+      bottom: 但是*合上书回想*，才是真在记
+      top_actor: {pose: desk, mood: sleep, hair: middle, shirt: [198, 88, 68], prop: book, bubble: "再看一遍就记住了", bubble_kind: aside, bubble_tail: left}
+      bottom_actor: {pose: think, mood: neutral, hair: middle, shirt: [96, 142, 82], bubble: "合上想想刚才讲了啥", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你记住*书上的原话*，转头全忘了
+      top_backdrop: books
+      bottom_backdrop: voice
+      bottom: 可是你记住*自己说的话*
+      top_actor: {pose: stand, mood: tired, hair: pony, shirt: [198, 88, 68], bubble: "原文是这么写的", bubble_kind: speech, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: happy, hair: pony, shirt: [96, 142, 82], bubble: "我用自己的话说一遍", bubble_kind: speech, bubble_tail: left}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 你看*一次*就忘，下次还是不会
+      top_backdrop: night
+      bottom_backdrop: bulb
+      bottom: 而隔一天*再回想一次*，就真记住了
+      top_actor: {pose: lie, mood: sad, hair: curly, shirt: [198, 88, 68], bubble: "看过了,应该会了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: curly, shirt: [96, 142, 82], bubble: "明天再问自己一遍", bubble_kind: speech, bubble_tail: right}
+      top_scene: pink_bad
+      bottom_scene: pink_good
+
+- id: tip-003
+  topic: 打字不用看键盘的三个练法
+  title: 打字不用看键盘
+  subtitle: 一个月，从找键到盲打
+  theme: blush
+  pages:
+    - top: 你低头*找字母*，一分钟打五个字
+      top_backdrop: keyboard
+      bottom_backdrop: keyboard
+      bottom: 但是你的*手自己知道*每个键在哪
+      top_actor: {pose: sit, mood: think, hair: short, shirt: [198, 88, 68], prop: laptop, bubble: "F 键在哪来着", bubble_kind: think, bubble_tail: right, sfx: "哒…哒…"}
+      bottom_actor: {pose: sit, mood: happy, hair: short, shirt: [96, 124, 176], prop: laptop, bubble: "手比脑子记得快", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你从*a 键*开始，一个一个背
+      top_backdrop: keyboard
+      bottom_backdrop: keyboard
+      bottom: 而你从*中间那排*开始，两只手一起
+      top_actor: {pose: sit, mood: tired, hair: bun, shirt: [198, 88, 68], prop: laptop, bubble: "a b c d…", bubble_kind: aside, bubble_tail: left}
+      bottom_actor: {pose: sit, mood: neutral, hair: bun, shirt: [96, 124, 176], prop: laptop, bubble: "中间八个键,手指不挪窝", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你练*孤零零的单词*
+      top_backdrop: keyboard
+      bottom_backdrop: desk
+      bottom: 可是你练*自己天天写的那句话*
+      top_actor: {pose: sit, mood: sad, hair: middle, shirt: [198, 88, 68], prop: laptop, bubble: "the quick brown…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: sit, mood: neutral, hair: middle, shirt: [96, 124, 176], prop: laptop, bubble: "就练你每天写的那句", bubble_kind: speech, bubble_tail: left}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你练*十分钟*就停，然后全忘了
+      top_backdrop: night
+      bottom_backdrop: road
+      bottom: 而每天*只练五分钟*，一天不落
+      top_actor: {pose: lie, mood: tired, hair: pony, shirt: [198, 88, 68], prop: phone, bubble: "今天练够了", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: happy, hair: pony, shirt: [96, 142, 82], bubble: "每天五分钟,一个月就行", bubble_kind: speech, bubble_tail: right}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 你追求*一次全打对*，越打越慢
+      top_backdrop: keyboard
+      bottom_backdrop: keyboard
+      bottom: 但是你追求*先快再慢点也没事*
+      top_actor: {pose: think, mood: think, hair: curly, shirt: [198, 88, 68], prop: laptop, bubble: "又按错了…", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: sit, mood: smug, hair: curly, shirt: [96, 142, 82], prop: laptop, bubble: "先冲到 60,再回头改错", bubble_kind: speech, bubble_tail: right}
+      top_scene: pink_bad
+      bottom_scene: pink_good
+
+- id: tip-004
+  topic: 拍照构图：四个位置就够用
+  title: 拍照构图四宫格
+  subtitle: 不用懂摄影，记住四点
+  theme: ivory
+  pages:
+    - top: 手机*举在胸口*，拍出来全是肚子
+      top_backdrop: camera
+      bottom_backdrop: camera
+      bottom: 但是手机*举到眼睛的高度*，腿也长
+      top_actor: {pose: stand, mood: sad, hair: short, shirt: [198, 88, 68], prop: phone, bubble: "怎么拍到肚子了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: happy, hair: short, shirt: [96, 124, 176], prop: phone, bubble: "手抬起来就行", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 人站在*正中间*，拍出来像证件照
+      top_backdrop: camera
+      bottom_backdrop: camera
+      bottom: 而人站在*偏一点*，画面就好看了
+      top_actor: {pose: stand, mood: neutral, hair: bun, shirt: [198, 88, 68], prop: phone, bubble: "站中间最保险", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: bun, shirt: [96, 124, 176], prop: phone, bubble: "偏一点,画面才透气", bubble_kind: speech, bubble_tail: left}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 背后是*一面白墙*，人像贴在墙上
+      top_backdrop: camera
+      bottom_backdrop: camera
+      bottom: 可是背景*有远有近*，人就立体了
+      top_actor: {pose: stand, mood: neutral, hair: middle, shirt: [198, 88, 68], prop: phone, bubble: "干净点其实挺好的", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: happy, hair: middle, shirt: [96, 124, 176], prop: phone, bubble: "背景要有东西,但要离远点", bubble_kind: speech, bubble_tail: left}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 太阳在你*背后*，人黑成一片
+      top_backdrop: camera
+      bottom_backdrop: camera
+      bottom: 而太阳在你*侧后方*，轮廓全出来了
+      top_actor: {pose: stand, mood: neutral, hair: pony, shirt: [198, 88, 68], bubble: "怎么这么黑啊", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: happy, hair: pony, shirt: [96, 124, 176], bubble: "光要在侧后边", bubble_kind: speech, bubble_tail: right}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 你按*几十张*照片，回家一张都不喜欢
+      top_backdrop: camera
+      bottom_backdrop: mirror
+      bottom: 但是你按*一张*就拍好了，回家一看真不错
+      top_actor: {pose: sit, mood: tired, hair: curly, shirt: [198, 88, 68], prop: phone, bubble: "这张还是不行", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: curly, shirt: [96, 142, 82], bubble: "位置对了,一张就够", bubble_kind: speech, bubble_tail: right}
+      top_scene: pink_bad
+      bottom_scene: pink_good
+
+- id: tip-005
+  topic: 会议记不住重点，就用这三个动作
+  title: 开会记不住重点
+  subtitle: 三个动作，比录音管用
+  theme: cream
+  pages:
+    - top: 你*打开录音*，然后开始发呆
+      top_backdrop: meeting
+      bottom_backdrop: meeting
+      bottom: 但是你*写下三行*关键词，人就清醒了
+      top_actor: {pose: sit, mood: tired, hair: short, shirt: [198, 88, 68], prop: phone, bubble: "录着就行了吧", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: sit, mood: neutral, hair: short, shirt: [96, 142, 82], prop: book, bubble: "定了啥、谁来做、啥时候", bubble_kind: speech, bubble_tail: left}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你记的是*谁说了什么*
+      top_backdrop: meeting
+      bottom_backdrop: checklist
+      bottom: 而你记的是*结论和要做的事*
+      top_actor: {pose: desk, mood: sleep, hair: bun, shirt: [198, 88, 68], prop: laptop, bubble: "老王刚说啥了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: think, mood: neutral, hair: bun, shirt: [96, 142, 82], prop: book, bubble: "定了啥,谁来做,啥时候", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 别人问起来，你就*翻录音*
+      top_backdrop: meeting
+      bottom_backdrop: meeting
+      bottom: 可是别人问起来，你*直接念笔记*
+      top_actor: {pose: think, mood: sad, hair: middle, shirt: [198, 88, 68], prop: phone, bubble: "等我找一下…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: middle, shirt: [96, 142, 82], prop: book, bubble: "三行,十秒说清", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 会开完了，你*什么都不剩*
+      top_backdrop: meeting
+      bottom_backdrop: road
+      bottom: 而会开完，你*多了一件事要做*
+      top_actor: {pose: lie, mood: sad, hair: pony, shirt: [198, 88, 68], bubble: "开完了…忘了", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: happy, hair: pony, shirt: [96, 142, 82], bubble: "我知道自己该干嘛了", bubble_kind: speech, bubble_tail: left}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+
+- id: tip-006
+  topic: 回消息别再一个一个回了
+  title: 回消息的三个效率动作
+  subtitle: 一句话解决，不用逐条回复
+  theme: sage
+  pages:
+    - top: 你*一条条*回，回了两个小时
+      top_backdrop: chat
+      bottom_backdrop: chat
+      bottom: 但是你*合并成三条*，十分钟就清空了
+      top_actor: {pose: sit, mood: tired, hair: short, shirt: [198, 88, 68], prop: phone, bubble: "还有 18 条…", bubble_kind: aside, bubble_tail: right, sfx: "叮 叮 叮"}
+      bottom_actor: {pose: stand, mood: happy, hair: short, shirt: [96, 142, 82], prop: phone, bubble: "按人分组,一次回完", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 别人只发一句*「在吗」*，你猜他要干嘛
+      top_backdrop: chat
+      bottom_backdrop: chat
+      bottom: 而别人问的是*「有空吗」*，直接进正题
+      top_actor: {pose: think, mood: think, hair: bun, shirt: [198, 88, 68], prop: phone, bubble: "在…在…到底啥事", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: bun, shirt: [96, 142, 82], prop: phone, bubble: "一上来就说事", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你回一句*「好的」*
+      top_backdrop: chat
+      bottom_backdrop: voice
+      bottom: 可是你回一句*「周三下午三点」*
+      top_actor: {pose: sit, mood: sad, hair: middle, shirt: [198, 88, 68], prop: phone, bubble: "好的好的", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: middle, shirt: [96, 142, 82], prop: phone, bubble: "给个准时间,少来回问一次", bubble_kind: speech, bubble_tail: left}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你被*十几条*消息堵在那儿动不了
+      top_backdrop: chat
+      bottom_backdrop: chat
+      bottom: 而你*十分钟*就把它们全清了
+      top_actor: {pose: headache, mood: rage, hair: curly, shirt: [198, 88, 68], prop: phone, bubble: "回不完啊！", bubble_kind: shout, bubble_tail: down, sfx: "嗡嗡嗡"}
+      bottom_actor: {pose: walk, mood: happy, hair: curly, shirt: [96, 142, 82], bubble: "先回要你拍板的那几条", bubble_kind: speech, bubble_tail: right}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+
+- id: tip-007
+  topic: 出门前十分钟能做的五件事
+  title: 出门前十件事
+  subtitle: 做完再走，一天不慌
+  theme: blush
+  pages:
+    - top: 你*踩着点*冲出门，一路在赶
+      top_backdrop: commute
+      bottom_backdrop: commute
+      bottom: 但是你*提前十分钟*出门，一天都从容
+      top_actor: {pose: run, mood: rage, hair: short, shirt: [198, 88, 68], bubble: "要迟到了！", bubble_kind: shout, bubble_tail: down, sfx: "冲！"}
+      bottom_actor: {pose: walk, mood: calm, hair: short, shirt: [96, 142, 82], bubble: "早出门十分钟,等于多十分钟", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 早餐是*在路边边走边吃*的
+      top_backdrop: commute
+      bottom_backdrop: kitchen
+      bottom: 而早餐是*坐下来吃完*的
+      top_actor: {pose: walk, mood: tired, hair: bun, shirt: [198, 88, 68], bubble: "边走边吃吧", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: sit, mood: happy, hair: bun, shirt: [96, 142, 82], bubble: "十分钟,很值", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 到了公司，你*才开始想*今天要干嘛
+      top_backdrop: desk
+      bottom_backdrop: checklist
+      bottom: 可是昨晚你就*写好了*那三行
+      top_actor: {pose: sit, mood: sad, hair: middle, shirt: [198, 88, 68], prop: laptop, bubble: "今天做啥来着", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: think, mood: smug, hair: middle, shirt: [96, 142, 82], prop: book, bubble: "三行,一开工就有方向", bubble_kind: speech, bubble_tail: left}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 到了公司才*想起没带充电线*
+      top_backdrop: office
+      bottom_backdrop: cabinet
+      bottom: 而充电线*永远在包里*，从来不用惦记
+      top_actor: {pose: headache, mood: cry, hair: pony, shirt: [198, 88, 68], bubble: "手机只剩 8%…", bubble_kind: shout, bubble_tail: down}
+      bottom_actor: {pose: walk, mood: happy, hair: pony, shirt: [96, 142, 82], bubble: "放固定位置,永远不差", bubble_kind: speech, bubble_tail: right}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+
+- id: tip-008
+  topic: 让房间变高级的三个动作
+  title: 房间变高级的三个动作
+  subtitle: 不用花钱，扔掉就行
+  theme: ivory
+  pages:
+    - top: 桌上堆着*所有的东西*
+      top_backdrop: living
+      bottom_backdrop: living
+      bottom: 但是桌上只留*今天要用的*那几样
+      top_actor: {pose: desk, mood: tired, hair: short, shirt: [198, 88, 68], bubble: "都没地方坐了", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: happy, hair: short, shirt: [96, 142, 82], bubble: "空出来,人也不一样了", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 灯是*惨白的顶灯*
+      top_backdrop: living
+      bottom_backdrop: living
+      bottom: 而你有一盏*暖光的落地灯*
+      top_actor: {pose: sit, mood: sad, hair: bun, shirt: [198, 88, 68], bubble: "跟审讯室似的", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: sit, mood: neutral, hair: bun, shirt: [96, 142, 82], bubble: "换个光,同一个屋子两个样", bubble_kind: speech, bubble_tail: left}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你有*一堆小摆件*，舍不得扔
+      top_backdrop: living
+      bottom_backdrop: living
+      bottom: 可是你只留*三样*大的，反而更好看
+      top_actor: {pose: think, mood: think, hair: middle, shirt: [198, 88, 68], bubble: "都是宝贝,不能扔", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: middle, shirt: [96, 142, 82], bubble: "少即是多", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+
+- id: tip-009
+  topic: 读论文/长文的三步法
+  title: 读长文只要三步
+  subtitle: 一小时读完并记住
+  theme: dusk
+  pages:
+    - top: 你从*第一行*读到最后一行
+      top_backdrop: books
+      bottom_backdrop: books
+      bottom: 但是你先读*标题和小标题*
+      top_actor: {pose: desk, mood: sleep, hair: short, shirt: [198, 88, 68], prop: book, bubble: "好困啊…", bubble_kind: aside, bubble_tail: left, sfx: "zzz"}
+      bottom_actor: {pose: think, mood: neutral, hair: short, shirt: [96, 142, 82], prop: book, bubble: "先看骨架,再填内容", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你一边读*一边划线*
+      top_backdrop: books
+      bottom_backdrop: books
+      bottom: 而你读完*再凭记忆回想*一遍
+      top_actor: {pose: sit, mood: think, hair: bun, shirt: [198, 88,  68], prop: book, bubble: "划满了就算读过了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: think, mood: neutral, hair: bun, shirt: [96, 142, 82], prop: book, bubble: "合上,回想三个要点", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你读完*什么也没留下*
+      top_backdrop: books
+      bottom_backdrop: radio
+      bottom: 可是你能*讲出三个要点*给别人听
+      top_actor: {pose: sit, mood: sad, hair: pony, shirt: [198, 88, 68], bubble: "看着眼熟啊", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: armsup, mood: happy, hair: pony, shirt: [96, 142, 82], bubble: "讲得出来,就真的会了", bubble_kind: speech, bubble_tail: down}
+      top_scene: green_bad
+      bottom_scene: green_good
+
+- id: tip-010
+  topic: 让人愿意帮你的说话方式
+  title: 求人办事怎么说
+  subtitle: 一句话让人没法拒绝
+  theme: cream
+  pages:
+    - top: 你开口就是*「你帮个忙」*
+      top_backdrop: voice
+      bottom_backdrop: cards
+      bottom: 但是你开口说*「这事只有你能定」*
+      top_actor: {pose: sit, mood: sad, hair: short, shirt: [198, 88, 68], bubble: "帮我一下嘛…", bubble_kind: speech, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: short, shirt: [96, 142, 82], bubble: "凭什么要帮你", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你只顾说*自己有多难*
+      top_backdrop: voice
+      bottom_backdrop: voice
+      bottom: 而你先说*你能提供什么*
+      top_actor: {pose: think, mood: think, hair: bun, shirt: [198, 88, 68], bubble: "我实在太难了…", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: wave, mood: happy, hair: bun, shirt: [96, 142, 82], bubble: "先说我这活儿两小时能搞定", bubble_kind: speech, bubble_tail: left}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你一口气给了*十个选项*
+      top_backdrop: voice
+      bottom_backdrop: cards
+      bottom: 可是你只给*两个选项*让他挑
+      top_actor: {pose: think, mood: think, hair: middle, shirt: [198, 88, 68], bubble: "都行都行,你自己选", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: middle, shirt: [96, 142, 82], bubble: "A 还是 B?", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 对方说*「我看看」*，然后就没下文了
+      top_backdrop: cards
+      bottom_backdrop: office
+      bottom: 而对方说*「行，我做」*，事情就落地了
+      top_actor: {pose: sit, mood: tired, hair: pony, shirt: [198, 88, 68], bubble: "好…好的", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: joy, hair: pony, shirt: [96, 142, 82], bubble: "给个截止时间,对方才好接", bubble_kind: speech, bubble_tail: left}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+
+- id: tip-011
+  topic: 记账不用记每一笔
+  title: 记账只记三类
+  subtitle: 三行数字，够用一年
+  theme: sage
+  pages:
+    - top: 你记*每一笔*，记到一半就崩溃
+      top_backdrop: money
+      bottom_backdrop: money
+      bottom: 但是你只记*三类*大钱
+      top_actor: {pose: desk, mood: sleep, hair: short, shirt: [198, 88, 68], prop: laptop, bubble: "再记一笔…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: sit, mood: happy, hair: short, shirt: [96, 142, 82], prop: laptop, bubble: "房、车、吃,三类就够", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你记了*半年*然后放弃了
+      top_backdrop: night
+      bottom_backdrop: money
+      bottom: 而你记了*半年*然后真的用上了
+      top_actor: {pose: lie, mood: sad, hair: bun, shirt: [198, 88, 68], bubble: "太麻烦,不记了", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: think, mood: neutral, hair: bun, shirt: [96, 142, 82], bubble: "就三行,坚持半年", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你根本*看不出钱去哪了*
+      top_backdrop: money
+      bottom_backdrop: wallet
+      bottom: 可是你一眼就看出*哪个是坑*
+      top_actor: {pose: think, mood: sad, hair: middle, shirt: [198, 88, 68], bubble: "怎么又没了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: middle, shirt: [96, 142, 82], bubble: "哪一类在涨,一眼看到", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+
+- id: tip-012
+  topic: 拖延的人其实有解药
+  title: 拖延的解药
+  subtitle: 不是意志力，是五分钟
+  theme: blush
+  pages:
+    - top: 你等*状态好了*再开始，结果一直没开始
+      top_backdrop: night
+      bottom_backdrop: road
+      bottom: 但是你先做*五分钟*，状态自己就来了
+      top_actor: {pose: sit, mood: tired, hair: short, shirt: [198, 88, 68], prop: laptop, bubble: "等会儿状态好一点", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: run, mood: happy, hair: short, shirt: [96, 142, 82], bubble: "动起来,状态自己会来", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你想着*一次就做完*
+      top_backdrop: checklist
+      bottom_backdrop: desk
+      bottom: 而你先写一份*最烂的第一版*
+      top_actor: {pose: think, mood: think, hair: bun, shirt: [198, 88, 68], bubble: "不能做烂啊", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: joy, hair: bun, shirt: [96, 142, 82], bubble: "烂的第一版也算数", bubble_kind: speech, bubble_tail: left}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 任务*太大*，你根本不敢碰
+      top_backdrop: mountain
+      bottom_backdrop: checklist
+      bottom: 可是你把它*拆到十分钟能做完*的大小
+      top_actor: {pose: sit, mood: sad, hair: middle, shirt: [198, 88, 68], bubble: "这么大,做不完的", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: middle, shirt: [96, 142, 82], bubble: "拆到十分钟能做完就行", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你*刷手机*，就是不敢开始
+      top_backdrop: chat
+      bottom_backdrop: desk
+      bottom: 而你把*最怕的那句话*写下来
+      top_actor: {pose: lie, mood: cry, hair: pony, shirt: [198, 88, 68], prop: phone, bubble: "先玩会儿…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: think, mood: neutral, hair: pony, shirt: [96, 142, 82], prop: book, bubble: "写下来,怕的就没那么可怕", bubble_kind: speech, bubble_tail: left}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+
+- id: tip-013
+  topic: 整理电脑桌面和文件夹
+  title: 文件夹这样建
+  subtitle: 半年后还能找到
+  theme: ivory
+  pages:
+    - top: 你的桌面*堆了三十个*窗口
+      top_backdrop: cabinet
+      bottom_backdrop: cabinet
+      bottom: 但是你的桌面*只有三个*文件夹
+      top_actor: {pose: desk, mood: tired, hair: short, shirt: [198, 88, 68], prop: laptop, bubble: "都看不清哪个是哪个", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: sit, mood: happy, hair: short, shirt: [96, 142, 82], prop: laptop, bubble: "桌面只留三个文件夹", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 文件夹叫*「新建文件夹」*
+      top_backdrop: drawer
+      bottom_backdrop: drawer
+      bottom: 而文件夹叫*「2026-工作」*
+      top_actor: {pose: think, mood: sad, hair: bun, shirt: [198, 88, 68], prop: laptop, bubble: "新建文件夹(3)", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: bun, shirt: [96, 142, 82], prop: laptop, bubble: "按年份分,一秒就找到", bubble_kind: speech, bubble_tail: left}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你找一个文件*翻了二十分钟*
+      top_backdrop: cabinet
+      bottom_backdrop: cabinet
+      bottom: 可是你找同一个文件*十秒就找到了*
+      top_actor: {pose: headache, mood: rage, hair: curly, shirt: [198, 88, 68], prop: laptop, bubble: "到底存哪了！", bubble_kind: shout, bubble_tail: down}
+      bottom_actor: {pose: walk, mood: happy, hair: curly, shirt: [96, 142, 82], prop: laptop, bubble: "名字起对了,就是快", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+
+- id: tip-014
+  topic: 让人秒回的三个写法
+  title: 让人秒回的消息
+  subtitle: 三个字就够了
+  theme: dusk
+  pages:
+    - top: 你连发三条*「在吗」*，对方没回
+      top_backdrop: chat
+      bottom_backdrop: chat
+      bottom: 但是你发一句*「周三下午能聊十分钟吗」*
+      top_actor: {pose: sit, mood: tired, hair: short, shirt: [198, 88, 68], prop: phone, bubble: "到底回不回啊…", bubble_kind: aside, bubble_tail: right, sfx: "叮 叮"}
+      bottom_actor: {pose: stand, mood: happy, hair: short, shirt: [96, 142, 82], prop: phone, bubble: "给个事由,对方就好回", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你的消息*长到看不到底*
+      top_backdrop: chat
+      bottom_backdrop: chat
+      bottom: 而你的消息*三行就说清了*
+      top_actor: {pose: desk, mood: sleep, hair: bun, shirt: [198, 88, 68], prop: phone, bubble: "看到最后一条了…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: think, mood: neutral, hair: bun, shirt: [96, 142, 82], prop: phone, bubble: "三行:要啥、啥时、找谁", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 对方*不知道你要他干嘛*
+      top_backdrop: chat
+      bottom_backdrop: chat
+      bottom: 可是对方*一看就知道该干嘛*
+      top_actor: {pose: think, mood: think, hair: middle, shirt: [198, 88, 68], prop: phone, bubble: "他想让我干嘛来着", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: middle, shirt: [96, 142, 82], prop: phone, bubble: "第一句就说结论", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+
+- id: tip-015
+  topic: 存钱只做这一件事
+  title: 存钱只做一件事
+  subtitle: 不用记账不用理财
+  theme: cream
+  pages:
+    - top: 发工资那天，你*先花*个够
+      top_backdrop: wallet
+      bottom_backdrop: wallet
+      bottom: 但是发工资那天，你*先转走*三成
+      top_actor: {pose: sit, mood: cry, hair: short, shirt: [198, 88, 68], prop: phone, bubble: "月底再说吧", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: short, shirt: [96, 142, 82], prop: phone, bubble: "先转走,剩下的随便花", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 钱*躺在活期*里，随时能取出来
+      top_backdrop: money
+      bottom_backdrop: money
+      bottom: 而钱*躺在一个你动不到*的地方
+      top_actor: {pose: sit, mood: sad, hair: bun, shirt: [198, 88, 68], bubble: "手就是痒", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: bun, shirt: [96, 142, 82], bubble: "取不出来,才存得住", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 到了月底，你*又没钱*了
+      top_backdrop: money
+      bottom_backdrop: money
+      bottom: 但是到了月底，你*还有余钱*
+      top_actor: {pose: lie, mood: cry, hair: curly, shirt: [198, 88, 68], bubble: "怎么又花光了…", bubble_kind: cry, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: happy, hair: curly, shirt: [96, 142, 82], bubble: "发薪日就分流", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+
+# ══════════════════════════════════════════════════════
+#  人生道理（副线赛道）
+# ══════════════════════════════════════════════════════
+
+- id: life-001
+  topic: 别为不重要的人解释自己
+  title: 别为不重要的人解释自己
+  subtitle: 有些话，说了就是自我否定
+  theme: cream
+  pages:
+    - top: 别人一句*「你怎么这么矫情」*
+      top_backdrop: voice
+      bottom_backdrop: voice
+      bottom: 但是你只是*懒得再解释*了
+      top_actor: {pose: headache, mood: rage, hair: short, shirt: [198, 88, 68], bubble: "我哪里矫情了", bubble_kind: shout, bubble_tail: down, sfx: "咔！"}
+      bottom_actor: {pose: stand, mood: cold, hair: short, shirt: [96, 124, 176], bubble: "嗯,谢谢关心", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你*一条条地反驳*，想让他明白
+      top_backdrop: voice
+      bottom_backdrop: rain
+      bottom: 而你直接*关掉对话框*，不回了
+      top_actor: {pose: armsup, mood: rage, hair: bun, shirt: [198, 88, 68], bubble: "第一条是…第二条是…", bubble_kind: shout, bubble_tail: down}
+      bottom_actor: {pose: stand, mood: cold, hair: bun, shirt: [96, 124, 176], bubble: "不回,就是回答", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你花了三小时*写了一大段*
+      top_backdrop: chat
+      bottom_backdrop: chat
+      bottom: 可是你只回一句：*谢谢关心*
+      top_actor: {pose: sit, mood: tired, hair: short, shirt: [198, 88, 68], prop: phone, bubble: "我得说清楚…", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: cold, hair: short, shirt: [96, 124, 176], prop: phone, bubble: "一个字都不多说", bubble_kind: speech, bubble_tail: left}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你开始*怀疑自己*是不是真有问题
+      top_backdrop: rain
+      bottom_backdrop: mountain
+      bottom: 而你知道那*明明是他的问题*
+      top_actor: {pose: sit, mood: sad, hair: long, shirt: [198, 88, 68], bubble: "是不是我太敏感了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: cold, hair: long, shirt: [96, 124, 176], bubble: "不是", bubble_kind: speech, bubble_tail: right}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 你以为自己在*讲道理*
+      top_backdrop: voice
+      bottom_backdrop: door
+      bottom: 但是你只是在*向别人证明自己*
+      top_actor: {pose: think, mood: think, hair: curly, shirt: [198, 88, 68], bubble: "我要解释清楚", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: neutral, hair: curly, shirt: [96, 124, 176], bubble: "你不用向我证明", bubble_kind: speech, bubble_tail: left}
+      top_scene: pink_bad
+      bottom_scene: pink_good
+
+- id: life-002
+  topic: 二十几岁最该有的不是存款，是可迁移的能力
+  title: 二十几岁存款没那么重要
+  subtitle: 会离开的东西很多，能力不会
+  theme: ivory
+  pages:
+    - top: 你在*攒一个数字*
+      top_backdrop: money
+      bottom_backdrop: mountain
+      bottom: 但是你在*攒一种能力*
+      top_actor: {pose: sit, mood: tired, hair: short, shirt: [198, 88, 68], prop: clock, bubble: "存到十万就好了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: run, mood: happy, hair: short, shirt: [96, 142, 82], bubble: "数字会清零,能力不会", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 公司裁员时，*数字救不了你*
+      top_backdrop: office
+      bottom_backdrop: office
+      bottom: 而*能干活的人*会被留下
+      top_actor: {pose: lie, mood: sleep, hair: short, shirt: [198, 88, 68], bubble: "…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: happy, hair: short, shirt: [96, 142, 82], bubble: "他要的是能立刻上手的人", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你的存款只能*撑一年*
+      top_backdrop: money
+      bottom_backdrop: road
+      bottom: 但是你的能力能*撑一辈子*
+      top_actor: {pose: sit, mood: sad, hair: bun, shirt: [198, 88, 68], bubble: "半年没收入就完了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: smug, hair: bun, shirt: [96, 142, 82], bubble: "能干活,永远有活干", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你说：我*还没想清楚*自己要什么
+      top_backdrop: bulb
+      bottom_backdrop: cards
+      bottom: 而你说：我能*解决什么问题*
+      top_actor: {pose: sit, mood: think, hair: middle, shirt: [198, 88, 68], bubble: "我想要…唔…", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: middle, shirt: [96, 142, 82], bubble: "我会做这个,能干那个", bubble_kind: speech, bubble_tail: right}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 你在*等一个完美的岗位*
+      top_backdrop: map
+      bottom_backdrop: road
+      bottom: 可是你先*变成稀缺的人*
+      top_actor: {pose: sit, mood: tired, hair: pony, shirt: [198, 88, 68], bubble: "再看看…", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: run, mood: joy, hair: pony, shirt: [96, 142, 82], bubble: "先有本事,岗位来找你", bubble_kind: speech, bubble_tail: left}
+      top_scene: pink_bad
+      bottom_scene: pink_good
+
+- id: life-003
+  topic: 真正的成熟，是允许一切发生
+  title: 允许一切发生
+  subtitle: 你的痛苦，多数来自「不该这样」
+  theme: sage
+  pages:
+    - top: 事情没按你想的来，你*当场崩了*
+      top_backdrop: rain
+      bottom_backdrop: road
+      bottom: 但是你只问一句：*那现在怎么办*
+      top_actor: {pose: headache, mood: rage, hair: short, shirt: [198, 88, 68], bubble: "怎么会这样！", bubble_kind: shout, bubble_tail: down, sfx: "砰！"}
+      bottom_actor: {pose: stand, mood: neutral, hair: short, shirt: [96, 142, 82], bubble: "先接受,再处理", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你反复问：*为什么偏偏是我*
+      top_backdrop: rain
+      bottom_backdrop: map
+      bottom: 而你换个问法：*我还能选什么*
+      top_actor: {pose: think, mood: sad, hair: bun, shirt: [198, 88, 68], bubble: "为什么是我啊", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: think, mood: neutral, hair: bun, shirt: [96, 142, 82], bubble: "下一步我能选啥", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你在*跟现实对着干*
+      top_backdrop: rain
+      bottom_backdrop: road
+      bottom: 但是你在*想办法解决它*
+      top_actor: {pose: armsup, mood: rage, hair: curly, shirt: [198, 88, 68], bubble: "这不合理！", bubble_kind: shout, bubble_tail: down}
+      bottom_actor: {pose: walk, mood: neutral, hair: curly, shirt: [96, 142, 82], bubble: "改不了,就先过", bubble_kind: speech, bubble_tail: left}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你觉得这一切*都不合理*
+      top_backdrop: rain
+      bottom_backdrop: mountain
+      bottom: 可是你发现一切*都有它的用处*
+      top_actor: {pose: sit, mood: sad, hair: middle, shirt: [198, 88, 68], bubble: "凭什么是我倒霉", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: middle, shirt: [96, 142, 82], bubble: "它教会了我啥", bubble_kind: speech, bubble_tail: right}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 你被过去*困在原地*
+      top_backdrop: night
+      bottom_backdrop: road
+      bottom: 而你把它*装进口袋*继续往前走
+      top_actor: {pose: lie, mood: cry, hair: pony, shirt: [198, 88, 68], bubble: "我回不去了", bubble_kind: cry, bubble_tail: right}
+      bottom_actor: {pose: run, mood: happy, hair: pony, shirt: [96, 142, 82], bubble: "带着走,别背着", bubble_kind: speech, bubble_tail: left}
+      top_scene: pink_bad
+      bottom_scene: pink_good
+
+- id: life-004
+  topic: 情绪稳定的人都有一种隐藏能力：不解释
+  title: 情绪稳定的人不解释
+  subtitle: 不是不生气，是不浪费时间
+  theme: blush
+  pages:
+    - top: 别人冤枉了你，你*憋到内伤*
+      top_backdrop: rain
+      bottom_backdrop: voice
+      bottom: 但是别人冤枉了你，你*当场说清*然后放下
+      top_actor: {pose: sit, mood: sad, hair: short, shirt: [198, 88, 68], bubble: "我现在不能吵", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: short, shirt: [96, 124, 176], bubble: "说清,然后放下", bubble_kind: speech, bubble_tail: right}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你在心里*排练一百句反驳*
+      top_backdrop: voice
+      bottom_backdrop: voice
+      bottom: 而你只说*该说的那一句*
+      top_actor: {pose: think, mood: rage, hair: bun, shirt: [198, 88, 68], bubble: "我该这么回他…", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: cold, hair: bun, shirt: [96, 124, 176], bubble: "一句,够了", bubble_kind: speech, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你把情绪*发给了最亲的人*
+      top_backdrop: rain
+      bottom_backdrop: night
+      bottom: 但是你把情绪*还给自己消化*
+      top_actor: {pose: armsup, mood: cry, hair: pony, shirt: [198, 88, 68], bubble: "我就说这一次…", bubble_kind: cry, bubble_tail: down}
+      bottom_actor: {pose: sit, mood: neutral, hair: pony, shirt: [96, 124, 176], bubble: "不迁怒,是我的底线", bubble_kind: speech, bubble_tail: right}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你以为*冷漠*就是成熟
+      top_backdrop: night
+      bottom_backdrop: bulb
+      bottom: 而你知道*清楚*和*冷漠*不一样
+      top_actor: {pose: stand, mood: cold, hair: middle, shirt: [198, 88, 68], bubble: "我不想说话", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: middle, shirt: [96, 124, 176], bubble: "清楚,是讲明白", bubble_kind: speech, bubble_tail: right}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 你或许被别人*情绪绑架*了
+      top_backdrop: crowd
+      bottom_backdrop: road
+      bottom: 而你开始*自己做决定*
+      top_actor: {pose: lie, mood: cry, hair: curly, shirt: [198, 88, 68], bubble: "他们会骂我的", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: smug, hair: curly, shirt: [96, 124, 176], bubble: "我决定,就这样", bubble_kind: speech, bubble_tail: left}
+      top_scene: pink_bad
+      bottom_scene: pink_good
+
+- id: life-005
+  topic: 圈子比努力值钱，但圈子是用努力换的
+  title: 圈子比努力值钱
+  subtitle: 但圈子是用努力换来的
+  theme: dusk
+  pages:
+    - top: 你熬到*凌晨两点*把方案做完了
+      top_backdrop: night
+      bottom_backdrop: office
+      bottom: 但是你的方案*根本没人看见*
+      top_actor: {pose: desk, mood: sleep, hair: short, shirt: [198, 88, 68], prop: laptop, bubble: "终于做完了…", bubble_kind: aside, bubble_tail: left}
+      bottom_actor: {pose: think, mood: sad, hair: short, shirt: [96, 124, 176], bubble: "做得再好也没人看", bubble_kind: think, bubble_tail: right}
+      top_scene: cool_bad
+      bottom_scene: cool_good
+    - top: 你以为*只要够努力*就行
+      top_backdrop: office
+      bottom_backdrop: crowd
+      bottom: 而你发现还得*被人看见*
+      top_actor: {pose: stand, mood: tired, hair: short, shirt: [198, 88, 68], bubble: "埋头干就完了", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: stand, mood: neutral, hair: short, shirt: [96, 124, 176], bubble: "努力 + 被看见", bubble_kind: speech, bubble_tail: left}
+      top_scene: warm_bad
+      bottom_scene: warm_good
+    - top: 你一个人*闷头做了半年*
+      top_backdrop: night
+      bottom_backdrop: crowd
+      bottom: 但是你在*对的地方*认识了三个人
+      top_actor: {pose: sit, mood: sad, hair: bun, shirt: [198, 88, 68], bubble: "连个说话的人都没有", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: wave, mood: happy, hair: bun, shirt: [96, 124, 176], bubble: "三个人,一个机会", bubble_kind: speech, bubble_tail: left}
+      top_scene: green_bad
+      bottom_scene: green_good
+    - top: 你在*饭局上浪费了一晚上*
+      top_backdrop: kitchen
+      bottom_backdrop: crowd
+      bottom: 而你在*饭局上记住了三个机会*
+      top_actor: {pose: sit, mood: tired, hair: middle, shirt: [198, 88, 68], bubble: "聊的都是废话", bubble_kind: aside, bubble_tail: right}
+      bottom_actor: {pose: wave, mood: happy, hair: middle, shirt: [96, 124, 176], bubble: "记住人和机会", bubble_kind: speech, bubble_tail: left}
+      top_scene: violet_bad
+      bottom_scene: violet_good
+    - top: 圈子不是*混出来*的
+      top_backdrop: crowd
+      bottom_backdrop: cards
+      bottom: 但是是*你带着东西去换*的
+      top_actor: {pose: think, mood: think, hair: pony, shirt: [198, 88, 68], bubble: "多认识人总没错", bubble_kind: think, bubble_tail: right}
+      bottom_actor: {pose: walk, mood: neutral, hair: pony, shirt: [96, 124, 176], bubble: "拿东西换,不是白拿", bubble_kind: speech, bubble_tail: left}
+      top_scene: pink_bad
+      bottom_scene: pink_good

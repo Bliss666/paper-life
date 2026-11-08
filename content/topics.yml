@@ -1,0 +1,140 @@
+# 图解万物风格 · 选题库
+#
+# 每个选题是一个 yml，包含：
+#   id          唯一标识（也是缓存文件名）
+#   topic       选题一句话
+#   title       备用标题（本地降级时用）
+#   kicker      分类标签
+#   brief       写作提示（给 AI 的额外要求）
+#   theme       配色主题
+#   shot        可选的真实产品截图（相对 assets/）
+#   fallback    本地降级文案（无 API 时用）
+#
+# 赛道：AI 效率 + 认知觉醒 双主线
+# 原则：不硬广，靠「真实踩坑经验」建立信任，ThinkNote 作为解决方案自然出现。
+
+- id: ai-001
+  topic: 为什么你用 AI 越用越笨
+  title: 为什么你用 AI 越用越笨
+  kicker: 认知觉醒
+  theme: warm
+  brief: 讲清「AI 替代思考」的机制，给出 3 个可立刻改的习惯。真实、扎心、不说教。
+  fallback:
+    pages:
+      - kicker: 真相
+        headline: 不是 AI 让你变笨，是*省思考*省过头了
+        note: 当答案来得太容易，大脑就不再负责组织语言和建立联系。
+        points: ["跳过理解", "跳过回忆", "跳过改写"]
+      - kicker: 症状
+        headline: 三个信号，*说明*你在退化
+        note: 同一类问题换个说法就答不出来，说明知识没进你的脑子。
+        points: ["离开 AI 不会写", "看答案没感觉", "重复问同一句"]
+      - kicker: 解法
+        headline: 改一件事：*先猜再问*
+        note: 先自己给一个答案，再让 AI 纠正，差距感会逼你思考。
+        points: ["先写你的假设", "让它挑错", "最后自己复述"]
+
+- id: ai-002
+  topic: 公式复制成图片，是效率最大的隐形漏洞
+  title: 公式复制成图片
+  kicker: AI效率
+  theme: blue
+  brief: 从论文/作业场景切入，讲清「看起来复制了，其实内容丢了」的隐蔽性，给出判断方法和解决思路。
+  fallback:
+    pages:
+      - kicker: 陷阱
+        headline: 你以为复制了，其实只复制了*一张图片*
+        note: 公式粘进 Word 变成图片，双击打不开，改不了，只能删了重来。
+        points: ["截图式复制", "粘贴后样式丢失", "编辑=重做"]
+      - kicker: 真相
+        headline: 浏览器给你的，是*渲染后的样子*
+        note: 不是内容本身，是内容画出来的结果。
+        points: ["HTML 而非数据", "结构被拍平", "Office 不认识"]
+      - kicker: 解法
+        headline: 复制要拿*结构*，不是拿*截图*
+        note: 让工具去解析 KaTeX 的 DOM，还原出原始 LaTeX，再转成 Word 认的 OMML。
+        points: ["解析而非截图", "LaTeX 中间层", "OMML 落盘"]
+
+- id: ai-003
+  topic: 同样是问 AI，为什么有人拿到答案有人拿到垃圾
+  title: 问 AI 的水平差距
+  kicker: AI效率
+  theme: green
+  brief: 讲「提示词不是咒语是需求描述」，给出提问四要素：角色、场景、约束、验收标准。
+  fallback:
+    pages:
+      - kicker: 差距
+        headline: 同样的工具，结果差*十倍*
+        note: 差的不是模型，是提问信息量。
+        points: ["模型一样", "结果不同", "差在上下文"]
+      - kicker: 方法
+        headline: 提问四要素：*角色 场景 约束 验收*
+        note: 少一个，答案就飘一半。
+        points: ["你是谁", "给谁用", "不许怎样", "怎么算好"]
+      - kicker: 关键
+        headline: 最容易被忽略的是*验收标准*
+        note: 不说清楚什么叫对，模型只能给你「听起来对」的答案。
+        points: ["给正例", "给反例", "给格式"]
+
+- id: ai-008
+  topic: 深度工作不是意志力问题，是环境设计问题
+  title: 深度工作靠环境
+  kicker: 认知觉醒
+  theme: green
+  brief: 讲环境设计和意志力的关系，给出具体的降低摩擦的做法。
+  fallback:
+    pages:
+      - kicker: 误解
+        headline: 专注力差，其实是*环境*差
+        note: 靠意志力对抗满屏通知，是一场必输的消耗战。
+        points: ["靠硬扛", "成本极高", "必然崩盘"]
+      - kicker: 真相
+        headline: 高手不是更自律，是*摩擦更少*
+        note: 他把干扰挡在伸手够不到的地方。
+        points: ["物理隔离", "减少切换", "预置状态"]
+      - kicker: 做法
+        headline: 把*摩擦*挪到另一侧
+        note: 让该做的顺滑，让不该做的麻烦。
+        points: ["启动成本归零", "退出成本拉高", "环境替你决策"]
+
+- id: ai-009
+  topic: 用 AI 写东西，读者其实一眼能看出来
+  title: 读者能闻出 AI 味
+  kicker: AI效率
+  theme: blue
+  brief: 讲 AI 文本的识别特征（空话开头、并列句、总结收尾），给出洗稿三步法。
+  fallback:
+    pages:
+      - kicker: 破绽
+        headline: 读者对这三句话*免疫了*
+        note: 在这个信息过载的时代，套话就是噪声。
+        points: ["在当今快节奏", "不仅如此更是", "总而言之"]
+      - kicker: 原因
+        headline: 因为 AI 写的是*平均语料*
+        note: 最安全的话，就是最没信息量的话。
+        points: ["求稳不出错", "结论可预测", "没有细节"]
+      - kicker: 解法
+        headline: 加三样：*细节 判断 语气*
+        note: 具体的事实、敢下的判断、你的说话方式。
+        points: ["给真实场景", "给明确立场", "给个人口吻"]
+
+- id: ai-010
+  topic: 别再问 AI 该做什么了，它比你更不知道
+  title: 别问 AI 该做什么
+  kicker: 认知觉醒
+  theme: violet
+  brief: 讲「AI 是放大器不是指南针」，讲把决策权握在自己手里的方法。
+  fallback:
+    pages:
+      - kicker: 误区
+        headline: 越问 AI 越*焦虑*
+        note: 它会给你二十个选项，每条都合理，每条都不负责。
+        points: ["选项爆炸", "都有道理", "没人拍板"]
+      - kicker: 真相
+        headline: AI 是*放大器*，不是*指南针*
+        note: 你指向哪它就放大哪，包括你的犹豫。
+        points: ["不替你选", "只放大输入", "方向自定"]
+      - kicker: 解法
+        headline: 带着*约束*去问
+        note: 先定自己的底线，再让它在边界里优化。
+        points: ["先定约束", "再求方案", "自己拍板"]
